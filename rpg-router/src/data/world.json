@@ -1,0 +1,32 @@
+[
+  {
+    "id": "entrada",
+    "nombre": "Entrada de la Cueva",
+    "descripcion": "Un arco de piedra antiguo cubierto de musgo.",
+    "direcciones": { "norte": "pasillo", "sur": null, "este": null, "oeste": null }
+  },
+  {
+    "id": "pasillo",
+    "nombre": "Pasillo de las Sombras",
+    "descripcion": "Un pasillo largo con antorchas.",
+    "direcciones": { "norte": "trono", "sur": "entrada", "este": "biblioteca", "oeste": "celda" }
+  },
+  {
+    "id": "biblioteca",
+    "nombre": "Biblioteca",
+    "descripcion": "Libros polvorientos.",
+    "direcciones": { "norte": null, "sur": null, "este": null, "oeste": "pasillo" }
+  },
+  {
+    "id": "celda",
+    "nombre": "Celda",
+    "descripcion": "Oscura y húmeda.",
+    "direcciones": { "norte": null, "sur": null, "este": "pasillo", "oeste": null }
+  },
+  {
+    "id": "trono",
+    "nombre": "Salón del Trono",
+    "descripcion": "Un trono de hueso.",
+    "direcciones": { "norte": null, "sur": "pasillo", "este": null, "oeste": null }
+  }
+]
