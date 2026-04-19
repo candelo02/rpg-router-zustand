@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Game from "../pages/Game";
 import Map from "../pages/Map";
 import { useGameStore } from "../store/useGameStore";
+import Layout from "../components/Layout";
 
 const ProtectedRoute = ({ children }) => {
   const playerName = useGameStore(state => state.playerName);
@@ -19,7 +20,9 @@ export default function AppRouter() {
           path="/game"
           element={
             <ProtectedRoute>
-              <Game />
+              <Layout>
+                <Game />
+              </Layout>
             </ProtectedRoute>
           }
         />
